@@ -1,2 +1,0 @@
-coverage==5.0a3
-pypandoc==1.4

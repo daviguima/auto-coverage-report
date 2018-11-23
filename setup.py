@@ -1,4 +1,6 @@
 import os
+from builtins import RuntimeError
+
 from setuptools import find_packages, setup
 
 short_description = 'A auto tester coverage report'
@@ -18,7 +20,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='auto_coverage_report',
-    version='0.0.1',
+    version='0.0.2',
     packages=find_packages(),
     include_package_data=True,
     license='MIT License',
