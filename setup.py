@@ -10,7 +10,7 @@ try:
     import pypandoc
 
     long_description = pypandoc.convert('README.md', 'rst')
-except:
+except RuntimeError:
     long_description = short_description
 
 # allow setup.py to be run from any path
@@ -27,13 +27,13 @@ setup(
     url='http://github.com/silviolleite/test-coverage-report',
     author='Silvio Luis',
     author_email='silviolleite@gmail.com',
-    maintainer='Davi Guimarães',
+    maintainer='David Guimarães',
     maintainer_email='dvdgmf@gmail.com',
     entry_points={
         'console_scripts': ['runtests=auto_coverage_report.command_line:main'],
     },
     install_requires=[
-        'coverage',
+        'coverage', 'pypandoc'
     ],
     classifiers=[
         'Environment :: Console',
