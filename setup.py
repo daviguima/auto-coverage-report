@@ -27,6 +27,8 @@ setup(
     url='http://github.com/silviolleite/test-coverage-report',
     author='Silvio Luis',
     author_email='silviolleite@gmail.com',
+    maintainer='Davi Guimarães',
+    maintainer_email='dvdgmf@gmail.com',
     entry_points={
         'console_scripts': ['runtests=auto_coverage_report.command_line:main'],
     },
